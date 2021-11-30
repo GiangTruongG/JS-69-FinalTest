@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 2(Problem solving)</title>
+</head>
+<body>
+    <script>
+        function merge2String(a, b) {
+            let arr = [];
+            let averageLength = 0;
+            let sign = 0;
+
+            if(a.length > b.length){
+                averageLength = a.length;
+                sign = 1;
+            } else {
+                averageLength = b.length;
+                sign = 2;
+            }
+
+            let outPut
+
+            for(let i = 0; i < averageLength; i++){
+                if(i < a.length && i < b.length){
+                    arr.push(a[i] + b[i]);
+                } else {
+                    if(sign === 1){
+                        arr.push(a.substring(i, a.length))
+                        outPut = arr.join('');
+                        return outPut
+                    } else {
+                        arr.push(b.substring(i, b.length))
+                        outPut = arr.join('');
+                        return outPut
+                    }
+                }
+            }
+
+        } 
+
+
+        console.log(merge2String('abcd', '12345678'));
+
+        
+
+    </script>
+</body>
+</html>

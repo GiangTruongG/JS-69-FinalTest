@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 2</title>
+</head>
+<body>
+    <script>
+        function alternatingSums(a) {
+            let team1 = [];
+            let team2 = [];
+            let outPut = [];
+
+            for(let i = 0; i < a.length; i++){
+                if(i % 2 == 0){
+                    team1.push(a[i]);
+                } else {
+                    team2.push(a[i]);
+                }
+            }
+
+            let weight1 = 0;
+            let weight2 = 0;
+
+            for(let i = 0; i < team1.length; i++){
+                weight1 += team1[i];
+            }
+
+            outPut.push(weight1);
+
+            for(let i = 0; i < team2.length; i++){
+                weight2 += team2[i];
+            }
+
+            outPut.push(weight2);
+            
+            return outPut
+        }
+
+        let input = [60, 40, 55, 75, 64];
+
+        console.log(alternatingSums(input));
+    </script>
+</body>
+</html>

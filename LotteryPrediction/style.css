@@ -1,0 +1,86 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6DD5FA;
+}
+
+.game-container {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-container .game-header {
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    background-color: #373B44;
+    padding: 20px;
+    color: #fff;
+    height: 30%;
+}
+
+.game-container .game-header h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.game-container .game-body {
+    padding: 30px;
+    background-color: #4286f4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 70%;
+}
+
+.game-container .game-body .number-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container .game-body .number-input button {
+    margin: 10px;
+    background-color: #373B44;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .game-container {
+        width: 300px;
+        height: 500px;
+    }
+
+    .game-container .game-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .game-container .game-body .number-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

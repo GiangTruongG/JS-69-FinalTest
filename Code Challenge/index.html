@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortener Link</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/009818d355.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <p>The <span>privacy-friend</span> URL shortener</p>
+    </div>
+
+    <div class="body">
+        <div class="body-container">
+            <h3>Link Shortener</h3>
+            <form>
+                <div class="link-enter">
+                    <label>Enter a link</label>
+                    <input id="longlink" class="input" type="text">
+                    <button id="getlink-btn" class="link-btn"><i class="fas fa-arrow-right"></i></button>
+                </div>
+                
+                <div class="domain">
+                    <label>Short a domain:</label>
+                    <button id="link1" class="domain-btn">shrtco.de</button>
+                    <button id="link2" class="domain-btn">9qr.de</button>
+                    <button id="link3" class="domain-btn">Shiny.link</button>
+                </div>
+            </form>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
